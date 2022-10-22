@@ -1,13 +1,13 @@
-package TestMain;
+package vliegtuigmaatschappij;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VliegtuigmaatschappijApplication {
+public class VMApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(VliegtuigmaatschappijApplication.class, args);
+        SpringApplication.run(VMApplication.class, args);
     }
 
 }

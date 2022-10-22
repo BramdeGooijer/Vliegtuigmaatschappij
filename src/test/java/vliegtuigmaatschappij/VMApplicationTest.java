@@ -1,13 +1,12 @@
-package com.example.vliegtuigmaatschappij;
+package vliegtuigmaatschappij;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VliegtuigmaatschappijApplicationTests {
-
+class VMApplicationTest {
     @Test
     void contextLoads() {
-    }
 
+    }
 }

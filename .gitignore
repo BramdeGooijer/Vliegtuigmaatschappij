@@ -13,18 +13,10 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea/azure
-.idea/.gitignore
-.idea/compiler.xml
-.idea/encodings.xml
-.idea/jarRepositories.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/uiDesigner.xml
-.idea/vcs.xml
-.idea/workspace.xml
+.idea
 *.iws
 *.ipr
+*.iml
 
 ### NetBeans ###
 /nbproject/private/
