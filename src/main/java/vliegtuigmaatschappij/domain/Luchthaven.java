@@ -1,5 +1,7 @@
 package vliegtuigmaatschappij.domain;
 
+import com.sun.xml.bind.util.ValidationEventLocatorExImpl;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +24,8 @@ public class Luchthaven {
 
     private double longitude;
 
-    @OneToMany(mappedBy = "vlieg_route_id", cascade = CascadeType.ALL, orphanRemoval = true)
+//    @OneToMany(mappedBy = "vlieg_route_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Transient
     private List<VliegRoute> alleVliegRoutes = new ArrayList<>();
 
     public Luchthaven() {
@@ -36,6 +39,14 @@ public class Luchthaven {
         this.land = land;
         this.latitude = latitude;
         this.longitude = longitude;
+    }
+
+    public void addVliegRoute(VliegRoute vliegRoute) {
+        alleVliegRoutes.add(vliegRoute);
+    }
+
+    public void removeVliegRoute(VliegRoute vliegRoute) {
+        alleVliegRoutes.remove(vliegRoute);
     }
 
     public String getCode() {

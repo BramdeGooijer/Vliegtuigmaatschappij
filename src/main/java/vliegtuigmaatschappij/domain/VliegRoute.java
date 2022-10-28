@@ -8,10 +8,12 @@ public class VliegRoute {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long vlieg_route_id;
 
-    @OneToOne(fetch = FetchType.LAZY)
+//    @OneToOne(fetch = FetchType.LAZY)
+    @Transient
     private Luchthaven vertrekLocatie;
 
-    @OneToOne(fetch = FetchType.LAZY)
+//    @OneToOne(fetch = FetchType.LAZY)
+    @Transient
     private Luchthaven aankomstLocatie;
 
     public VliegRoute() {
