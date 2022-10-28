@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Boeking {
-    List<Klant> klanten = new ArrayList<>();
-    Vlucht vlucht;
-    Reisklasse reisklasse;
+    private List<Klant> klanten = new ArrayList<>();
+    private Vlucht vlucht;
+    private Reisklasse reisklasse;
 }

@@ -6,12 +6,12 @@ import java.util.Date;
 import java.util.List;
 
 public class Vlucht {
-    VliegRoute vliegRoute;
-    List<Boeking> boekingen = new ArrayList<>();
-    Vliegtuig vliegtuig;
-    LocalDateTime vertrekdatum;
-    LocalDateTime aankomstdatum;
-    double prijsKlas1;
-    double prijsBusiness;
-    double prijsEconomy;
+    private VliegRoute vliegRoute;
+    private List<Boeking> boekingen = new ArrayList<>();
+    private Vliegtuig vliegtuig;
+    private LocalDateTime vertrekdatum;
+    private LocalDateTime aankomstdatum;
+    private double prijsKlas1;
+    private double prijsBusiness;
+    private double prijsEconomy;
 }

@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Klant {
-    List<Boeking> boekingen = new ArrayList<>();
-    String voornaam;
-    String achternaam;
-    int leeftijd;
-    String email;
-    long telefoonnummer;
-    String nationaliteit;
+    private List<Boeking> boekingen = new ArrayList<>();
+    private String voornaam;
+    private String achternaam;
+    private int leeftijd;
+    private String email;
+    private long telefoonnummer;
+    private String nationaliteit;
 }
