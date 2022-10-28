@@ -1,15 +1,33 @@
 package vliegtuigmaatschappij.domain;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity(name = "luchthaven")
 public class Luchthaven {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long luchthaven_id;
+
     private String code;
+
     private String naam;
+
     private String stad;
+
     private String land;
+
     private double latitude;
+
     private double longitude;
+
+    @OneToMany(mappedBy = "vlieg_route_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<VliegRoute> alleVliegRoutes = new ArrayList<>();
+
+    public Luchthaven() {
+
+    }
 
     public Luchthaven(String code, String naam, String stad, String land, double latitude, double longitude) {
         this.code = code;
