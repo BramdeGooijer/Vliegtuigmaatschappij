@@ -18,6 +18,7 @@ public class VMApplication {
     public static void main(String[] args) {
         SpringApplication.run(VMApplication.class, args);
         testDomeinHibernate();
+        System.out.println("werkt");
     }
 
     public static void testDomeinHibernate() {
