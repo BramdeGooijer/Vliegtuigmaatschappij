@@ -19,6 +19,7 @@ public class VMApplication {
         SpringApplication.run(VMApplication.class, args);
         testDomeinHibernate();
         System.out.println("werkt");
+        System.out.println("werkt2.0");
     }
 
     public static void testDomeinHibernate() {
